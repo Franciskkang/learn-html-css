@@ -44,7 +44,7 @@ form {
 
 /* 인접 일반 형제 선택자 */
 .parent + div {
-  border: 4px solid rgb(255, 0, 187);
+  border: 4px solid #0984e3;
 }
 
 /* 가상선택자(hover) */
@@ -52,3 +52,16 @@ form {
   /* 요소에 마우스 올려을때 스타일 */
   background-color: hotpink;
 }
+
+/* width, height  */
+.box {
+  width: 40px;
+  height: 500px;
+  background-color: #ff7675;
+}
+
+p {
+  color: #e17055;
+  font-size: 2em;
+}
+/* em=부모를 기준으로 몇배 2em = 부모2배로 지정하겠 */

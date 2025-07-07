@@ -17,24 +17,21 @@
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body>
-    <class="parent">
+    <div class="box"></div>
+    <div class="parent">
       "부모입니다"
       <div class="parent2">부모임ㄷ</div>
       <div class="parent3">ㅂㅁㅇㄷ</div>
       <!-- parent 자식 요소 -->
-      <div class="children">
-        "자식입니다" </div>
-        <div>
-          <p class="children_children">자손입니다</p>
-        </div>
-        <div>
-          <p class="children_children">자손입니다</p>
-        </div>
-    
-  
+      <div class="children">"자식입니다"</div>
+      <div>
+        <p class="children_children">자손입니다</p>
+      </div>
+      <div>
+        <p class="children_children">자손입니다</p>
+      </div>
+
       <div class="children"></div>
-
-
     </div>
     <!-- Inline 스타일 html코드 내에서 해당 태그에 직접 style applied -->
     <div style="background-color: blue; color: white" id="box1">
@@ -154,11 +151,10 @@
       </select>
 
       <!-- backend에 데이터를 보낼때 데이터를 사용하는 요소 첫번째 -->
-       <!-- 제출요소 -->
-        <input type="submit" value="서류제출">
+      <!-- 제출요소 -->
+      <input type="submit" value="서류제출" />
 
-        <button type="submit"
-        class="submit-button">서류제출</button>
+      <button type="submit" class="submit-button">서류제출</button>
     </form>
     <!-- text눌러도 선택이되도록 -->
   </body>
