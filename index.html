@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- 인라인이 아닌 내부스타일스타일시트 -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html 실습</title>
+    <!-- 내부스타일시트 head 섹션 안에 각 요소들의 style 정의-->
+    <style>
+      a {
+        /* 스타일속성 */
+        color: white;
+      }
+    </style>
+    <!-- 외부스타일시트 href통해서 만든 styles.css불러오기-->
+    <!-- 동등한 디렉토리 구조가 아니면, ./로 동일선상 디렉 클릭 및 그 안에 추가/로 유닉스 디렉토리 구조로 작성 -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-        perspiciatis nisi optio, aspernatur delectus nemo dignissimos?
-        Necessitatibus dolore pariatur numquam rem nihil non ducimus harum,
-        perferendis maxime fugiat, magni optio!
-      </p>
-      <hr />
-      <a href="https://www.naver.com/" target="_blank"> naver 바로가기 </a>
+    <!-- Inline 스타일 html코드 내에서 해당 태그에 직접 style applied -->
+    <div style="background-color: blue; color: white" id="box1">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis
+          maxime fugiat, magni optio!
+        </p>
+        <hr />
+        <a href="https://www.naver.com/" target="_blank"> naver 바로가기 </a>
+      </div>
+
+      <div>
+        <a href="">google 바로가기</a>
+      </div>
     </div>
-    <div>
-      <a href="">google 바로가기</a>
-    </div>
+
     <!-- 주석처리  ctl / -->
     <div style="border: 1px solid red">
       <h1>NAVER(주로타이틀)</h1>
@@ -26,11 +40,14 @@
       <p>
         Lorem ipsum <strong> dolor </strong> sit amet consectetur adipisicing
         elit. Laudantium sint et autem dolor vel, rerum eaque
-        <span style="color: red"> error </span> unde error suscipit modi
-        voluptatibus nobis facere similique aliquid inventore voluptas fugit
-        facilis sapiente.
+        <span style="color: red" class="error"> error </span> unde error
+        suscipit modi voluptatibus nobis facere similique aliquid inventore
+        voluptas fugit facilis sapiente.
       </p>
       <span>단어태크 안녕</span>
+      <hr />
+      <span class="error"> error message 입니다.</span>
+      <hr />
       <br />
       <spang> 지금은 오후 1시 34분입니다.</spang>
     </div>

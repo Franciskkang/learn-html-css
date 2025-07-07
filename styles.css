@@ -1,0 +1,17 @@
+/* 보더에는 3가지 속성 */
+form {
+  border: 2px dotted gray;
+}
+/* 요소(tag랑 같은말)선택자=태그선택자 */
+/* div { 
+  background-color: brown !important;
+} */
+
+/* id선택자 id값은 한 페이지에서 유일해야함 id로 선택했기때문에 고것만 적용*/
+#box1 {
+  background-color: brown !important;
+}
+/* 클래스 선택자 */
+.error {
+  background-color: rgb(114, 73, 73);
+}
