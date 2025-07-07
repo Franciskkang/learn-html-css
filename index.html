@@ -14,9 +14,28 @@
     </style>
     <!-- 외부스타일시트 href통해서 만든 styles.css불러오기-->
     <!-- 동등한 디렉토리 구조가 아니면, ./로 동일선상 디렉 클릭 및 그 안에 추가/로 유닉스 디렉토리 구조로 작성 -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body>
+    <class="parent">
+      "부모입니다"
+      <div class="parent2">부모임ㄷ</div>
+      <div class="parent3">ㅂㅁㅇㄷ</div>
+      <!-- parent 자식 요소 -->
+      <div class="children">
+        "자식입니다" </div>
+        <div>
+          <p class="children_children">자손입니다</p>
+        </div>
+        <div>
+          <p class="children_children">자손입니다</p>
+        </div>
+    
+  
+      <div class="children"></div>
+
+
+    </div>
     <!-- Inline 스타일 html코드 내에서 해당 태그에 직접 style applied -->
     <div style="background-color: blue; color: white" id="box1">
       <div>
@@ -133,6 +152,13 @@
         <option value="taco">taco</option>
         <option value="chipole">chipole</option>
       </select>
+
+      <!-- backend에 데이터를 보낼때 데이터를 사용하는 요소 첫번째 -->
+       <!-- 제출요소 -->
+        <input type="submit" value="서류제출">
+
+        <button type="submit"
+        class="submit-button">서류제출</button>
     </form>
     <!-- text눌러도 선택이되도록 -->
   </body>

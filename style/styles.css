@@ -1,0 +1,54 @@
+@import url("reset.css");
+
+/* 보더에는 3가지 속성 */
+form {
+  border: 2px dotted gray;
+}
+/* 요소(tag랑 같은말)선택자=태그선택자 */
+/* div { 
+  background-color: brown !important;
+} */
+
+/* id선택자 id값은 한 페이지에서 유일해야함 id로 선택했기때문에 고것만 적용*/
+#box1 {
+  background-color: brown !important;
+}
+/* 클래스 선택자 */
+/* rgba 투명도를포함한 RGB */
+.error {
+  background-color: rgb(114, 73, 73);
+}
+
+.parent {
+  border: 1px solid purple;
+}
+
+.children {
+  border: 1px solid blue;
+}
+
+.children_children {
+  border: 1px solid red;
+  background-color: beige;
+}
+
+/* 자손선택자 */
+.parent div {
+  background-color: aqua;
+}
+
+/* 일반 형제 선택자 
+.parent ~ div {
+  border: 4px solid;
+} */
+
+/* 인접 일반 형제 선택자 */
+.parent + div {
+  border: 4px solid rgb(255, 0, 187);
+}
+
+/* 가상선택자(hover) */
+.submit-button:hover {
+  /* 요소에 마우스 올려을때 스타일 */
+  background-color: hotpink;
+}
